@@ -21,7 +21,7 @@ namespace Logica
         public Conexion()
         {
             //Cadena de Conexion Para SQL Server:
-            String cadenaconexion = "workstation id=DBCOMPRAS.mssql.somee.com;packet size=4096;user id=oelopez_SQLLogin_2;pwd=grj6fgnt4b;data source=DBCOMPRAS.mssql.somee.com;persist security info=False;initial catalog=DBCOMPRAS";
+            String cadenaconexion = "";
             conn = new SqlConnection(cadenaconexion);
         }
 
