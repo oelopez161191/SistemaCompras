@@ -64,6 +64,18 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MttoPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MttoPersonas.Designer.cs">
+      <DependentUpon>MttoPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MttoUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MttoUsuarios.Designer.cs">
+      <DependentUpon>MttoUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Login.resx">
@@ -71,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MttoUsuarios.resx">
+      <DependentUpon>MttoUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

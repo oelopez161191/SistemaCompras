@@ -124,5 +124,34 @@ namespace Presentacion
                 childForm.Close();
             }
         }
+
+        private void personasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(id_tipo == "1")
+            {
+                MttoPersonas mttoP = new MttoPersonas();
+                mttoP.MdiParent = this;
+                mttoP.Show();
+            }
+            else
+            {
+                MessageBox.Show("No tiene acceso a este Mantenimiento", "Sistema de compras", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (id_tipo == "1")
+            {
+                MttoUsuarios mttoP = new MttoUsuarios();
+                mttoP.MdiParent = this;
+                mttoP.Show();
+            }
+            else
+            {
+                MessageBox.Show("No tiene acceso a este Mantenimiento", "Sistema de compras", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }

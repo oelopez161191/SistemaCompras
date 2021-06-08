@@ -4,21 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//Se importa libreria system.Data
-using System.Data;
-
 namespace Logica
 {
-    public class Usuario:Conexion
+    public class UsuarioCrudInsert :Conexion
     {
-
         /*
          * Se declaran las variables a usar
          * son las mismas que la base de datos
-         * 
+         * tabla usuario
          */
         public int id_usuario { get; set; }
-     
+
         public string usuario_usuario { get; set; }
 
         public string usuario_pass { get; set; }
@@ -28,22 +24,25 @@ namespace Logica
         public string usuario_email { get; set; }
 
         public string usuario_recovery { get; set; }
-
-
-        /*
-         * Aqui se programan las consultas a SQL
-         * 
-         */
-
-        public DataSet Login (string usuario, string password)
-        {
-            string sql = "select * from usuario where usuario_usuario = '"
-                + usuario + "' and usuario_pass = '" + password + "'";
-            
-            DataSet resultado = ConsultarSQL(sql);
-
-            return resultado;
-        }
-
     }
+
+    public class PersonaCrudInsert
+    {
+        /*
+         * Se declaran las variables a usar
+         * son las mismas que la base de datos
+         * tabla usuario_info
+         */
+        public int id_usuario_info { get; set; }
+
+        public string usuario_nombre { get; set; }
+
+        public string usuario_apellido { get; set; }
+
+        public DateTime usuario_nacimiento { get; set; }
+
+        public int usuario_id { get; set; }
+    }
+
+
 }

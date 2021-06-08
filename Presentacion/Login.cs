@@ -24,7 +24,7 @@ namespace Presentacion
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            Logica.Usuario objUser = new Logica.Usuario();
+            Logica.UsuarioSQL objUser = new Logica.UsuarioSQL();
             try
             {
                 string usuario = txtUsuario.Text;
