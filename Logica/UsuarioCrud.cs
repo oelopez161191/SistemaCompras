@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Logica
 {
-    public class UsuarioCrudInsert :Conexion
+    public class UsuarioCrudInsert : Conexion
     {
         /*
          * Se declaran las variables a usar
@@ -26,7 +26,7 @@ namespace Logica
         public string usuario_recovery { get; set; }
     }
 
-    public class PersonaCrudInsert
+    public class PersonaCrudInsert :Conexion
     {
         /*
          * Se declaran las variables a usar
@@ -44,5 +44,11 @@ namespace Logica
         public int usuario_id { get; set; }
     }
 
+    public class Tipo_Usuario : Conexion
+    {
+        public int id_tipo { get; set; }
+
+        public string tipo_usuario { get; set; }
+    }
 
 }

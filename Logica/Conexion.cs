@@ -13,6 +13,9 @@ namespace Logica
         private string mensaje;
         SqlConnection conn;
         SqlTransaction tran;
+        SqlDataReader reader;
+        SqlCommand cmd;
+
         public string Mensaje
         {
             get { return mensaje; }
@@ -21,7 +24,7 @@ namespace Logica
         public Conexion()
         {
             //Cadena de Conexion Para SQL Server:
-            String cadenaconexion = "";
+            String cadenaconexion = "workstation id=DBCOMPRAS.mssql.somee.com;packet size=4096;user id=oelopez_SQLLogin_2;pwd=grj6fgnt4b;data source=DBCOMPRAS.mssql.somee.com;persist security info=False;initial catalog=DBCOMPRAS";
             conn = new SqlConnection(cadenaconexion);
         }
 
@@ -89,5 +92,60 @@ namespace Logica
                 conn.Close();
             }
         }
+
+
+        public DataTable ListarSQL(String SentenciaSQL)
+        {
+            try
+            {
+                conn.Open();
+                SqlDataAdapter objRes = new SqlDataAdapter(SentenciaSQL, conn);
+                DataTable datos = new DataTable();
+                objRes.Fill(datos);
+                mensaje = "La consulta de datos fue Exitosa";
+                return datos;
+            }
+            catch (Exception MiExc)
+            {
+                DataTable datos2 = new DataTable();
+                mensaje = "ERROR FATALLITY: " + MiExc.Message;
+                return datos2;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+
+        public List<string> ListarSQLCombos(String SentenciaSQL)
+        {
+
+            List<string> lista = new List<string>(); 
+            try 
+            {
+                conn.Open();
+                cmd = new SqlCommand(SentenciaSQL, conn);
+
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    lista.Add(reader["tipo_usuario"].ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+
+            return lista;
+        }
+
     }
 }
