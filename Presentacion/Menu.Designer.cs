@@ -57,19 +57,6 @@ namespace Presentacion
             this.statusBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.windowsMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.newWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cascadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tileVerticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tileHorizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.arrangeIconsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mttoPersonasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -85,6 +72,8 @@ namespace Presentacion
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.mttoCategoriaEstadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mttoPersonasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -97,11 +86,10 @@ namespace Presentacion
             this.editMenu,
             this.viewMenu,
             this.toolsMenu,
-            this.windowsMenu,
-            this.helpMenu,
-            this.mttoPersonasToolStripMenuItem});
+            this.mttoPersonasToolStripMenuItem,
+            this.mttoCategoriaEstadoToolStripMenuItem,
+            this.mttoPersonasToolStripMenuItem1});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.MdiWindowListItem = this.windowsMenu;
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(632, 24);
             this.menuStrip.TabIndex = 0;
@@ -320,105 +308,6 @@ namespace Presentacion
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.optionsToolStripMenuItem.Text = "&Opciones";
             // 
-            // windowsMenu
-            // 
-            this.windowsMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newWindowToolStripMenuItem,
-            this.cascadeToolStripMenuItem,
-            this.tileVerticalToolStripMenuItem,
-            this.tileHorizontalToolStripMenuItem,
-            this.closeAllToolStripMenuItem,
-            this.arrangeIconsToolStripMenuItem});
-            this.windowsMenu.Name = "windowsMenu";
-            this.windowsMenu.Size = new System.Drawing.Size(66, 20);
-            this.windowsMenu.Text = "&Ventanas";
-            // 
-            // newWindowToolStripMenuItem
-            // 
-            this.newWindowToolStripMenuItem.Name = "newWindowToolStripMenuItem";
-            this.newWindowToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.newWindowToolStripMenuItem.Text = "&Nueva ventana";
-            this.newWindowToolStripMenuItem.Click += new System.EventHandler(this.ShowNewForm);
-            // 
-            // cascadeToolStripMenuItem
-            // 
-            this.cascadeToolStripMenuItem.Name = "cascadeToolStripMenuItem";
-            this.cascadeToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.cascadeToolStripMenuItem.Text = "&Cascada";
-            this.cascadeToolStripMenuItem.Click += new System.EventHandler(this.CascadeToolStripMenuItem_Click);
-            // 
-            // tileVerticalToolStripMenuItem
-            // 
-            this.tileVerticalToolStripMenuItem.Name = "tileVerticalToolStripMenuItem";
-            this.tileVerticalToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.tileVerticalToolStripMenuItem.Text = "Mosaico &vertical";
-            this.tileVerticalToolStripMenuItem.Click += new System.EventHandler(this.TileVerticalToolStripMenuItem_Click);
-            // 
-            // tileHorizontalToolStripMenuItem
-            // 
-            this.tileHorizontalToolStripMenuItem.Name = "tileHorizontalToolStripMenuItem";
-            this.tileHorizontalToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.tileHorizontalToolStripMenuItem.Text = "Mosaico &horizontal";
-            this.tileHorizontalToolStripMenuItem.Click += new System.EventHandler(this.TileHorizontalToolStripMenuItem_Click);
-            // 
-            // closeAllToolStripMenuItem
-            // 
-            this.closeAllToolStripMenuItem.Name = "closeAllToolStripMenuItem";
-            this.closeAllToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.closeAllToolStripMenuItem.Text = "C&errar todo";
-            this.closeAllToolStripMenuItem.Click += new System.EventHandler(this.CloseAllToolStripMenuItem_Click);
-            // 
-            // arrangeIconsToolStripMenuItem
-            // 
-            this.arrangeIconsToolStripMenuItem.Name = "arrangeIconsToolStripMenuItem";
-            this.arrangeIconsToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.arrangeIconsToolStripMenuItem.Text = "&Organizar iconos";
-            this.arrangeIconsToolStripMenuItem.Click += new System.EventHandler(this.ArrangeIconsToolStripMenuItem_Click);
-            // 
-            // helpMenu
-            // 
-            this.helpMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.contentsToolStripMenuItem,
-            this.indexToolStripMenuItem,
-            this.searchToolStripMenuItem,
-            this.toolStripSeparator8,
-            this.aboutToolStripMenuItem});
-            this.helpMenu.Name = "helpMenu";
-            this.helpMenu.Size = new System.Drawing.Size(53, 20);
-            this.helpMenu.Text = "Ay&uda";
-            // 
-            // contentsToolStripMenuItem
-            // 
-            this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
-            this.contentsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F1)));
-            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.contentsToolStripMenuItem.Text = "&Contenido";
-            // 
-            // indexToolStripMenuItem
-            // 
-            this.indexToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
-            this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-            this.indexToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.indexToolStripMenuItem.Text = "&Índice";
-            // 
-            // searchToolStripMenuItem
-            // 
-            this.searchToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
-            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.searchToolStripMenuItem.Text = "&Buscar";
-            // 
-            // toolStripSeparator8
-            // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(173, 6);
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.aboutToolStripMenuItem.Text = "&Acerca de... ...";
-            // 
             // mttoPersonasToolStripMenuItem
             // 
             this.mttoPersonasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -535,6 +424,20 @@ namespace Presentacion
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
+            // mttoCategoriaEstadoToolStripMenuItem
+            // 
+            this.mttoCategoriaEstadoToolStripMenuItem.Name = "mttoCategoriaEstadoToolStripMenuItem";
+            this.mttoCategoriaEstadoToolStripMenuItem.Size = new System.Drawing.Size(137, 20);
+            this.mttoCategoriaEstadoToolStripMenuItem.Text = "Mtto Categoria Estado";
+            this.mttoCategoriaEstadoToolStripMenuItem.Click += new System.EventHandler(this.mttoCategoriaEstadoToolStripMenuItem_Click);
+            // 
+            // mttoPersonasToolStripMenuItem1
+            // 
+            this.mttoPersonasToolStripMenuItem1.Name = "mttoPersonasToolStripMenuItem1";
+            this.mttoPersonasToolStripMenuItem1.Size = new System.Drawing.Size(104, 20);
+            this.mttoPersonasToolStripMenuItem1.Text = " Mtto Inventario";
+            this.mttoPersonasToolStripMenuItem1.Click += new System.EventHandler(this.mttoPersonasToolStripMenuItem1_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -571,10 +474,7 @@ namespace Presentacion
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripMenuItem printSetupToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tileHorizontalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fileMenu;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
@@ -595,16 +495,6 @@ namespace Presentacion
         private System.Windows.Forms.ToolStripMenuItem statusBarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolsMenu;
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem windowsMenu;
-        private System.Windows.Forms.ToolStripMenuItem newWindowToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cascadeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tileVerticalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem closeAllToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem arrangeIconsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpMenu;
-        private System.Windows.Forms.ToolStripMenuItem contentsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem indexToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton newToolStripButton;
         private System.Windows.Forms.ToolStripButton openToolStripButton;
         private System.Windows.Forms.ToolStripButton saveToolStripButton;
@@ -615,6 +505,8 @@ namespace Presentacion
         private System.Windows.Forms.ToolStripMenuItem mttoPersonasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mttoCategoriaEstadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mttoPersonasToolStripMenuItem1;
     }
 }
 

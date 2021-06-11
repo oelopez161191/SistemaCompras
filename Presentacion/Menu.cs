@@ -129,7 +129,7 @@ namespace Presentacion
         {
             if(id_tipo == "1")
             {
-                MttoPersonas mttoP = new MttoPersonas();
+                MttoUsuarioInfo mttoP = new  MttoUsuarioInfo();
                 mttoP.MdiParent = this;
                 mttoP.Show();
             }
@@ -152,6 +152,20 @@ namespace Presentacion
             {
                 MessageBox.Show("No tiene acceso a este Mantenimiento", "Sistema de compras", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void mttoCategoriaEstadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MttoCategoriaEstado mtto = new MttoCategoriaEstado();
+            mtto.MdiParent = this;
+            mtto.Show();
+        }
+
+        private void mttoPersonasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MttoInventario mtto = new MttoInventario();
+            mtto.MdiParent = this;
+            mtto.Show();
         }
     }
 }
