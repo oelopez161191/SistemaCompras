@@ -141,7 +141,7 @@ namespace Logica
         }
 
 
-        public List<string> ListarSQLCombos(String SentenciaSQL)
+        public List<string> ListarSQLCombos(String SentenciaSQL, string tabla)
         {
 
             List<string> lista = new List<string>(); 
@@ -154,7 +154,7 @@ namespace Logica
 
                 while (reader.Read())
                 {
-                    lista.Add(reader["tipo_usuario"].ToString());
+                    lista.Add(reader[tabla].ToString());
                 }
             }
             catch (Exception ex)

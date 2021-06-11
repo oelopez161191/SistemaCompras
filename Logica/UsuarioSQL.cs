@@ -63,8 +63,8 @@ namespace Logica
         public List<string> ConsultarListaTipoUsuario ()
         {
             string sql = "Select tipo_usuario from tipo_usuario order by id_tipo asc";
-
-            List<String> resultado = ListarSQLCombos(sql);
+            string tabla = "tipo_usuario";
+            List<String> resultado = ListarSQLCombos(sql, tabla);
 
             return resultado;
         }

@@ -64,6 +64,18 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MttoCategoriaEstado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MttoCategoriaEstado.Designer.cs">
+      <DependentUpon>MttoCategoriaEstado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MttoInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MttoInventario.Designer.cs">
+      <DependentUpon>MttoInventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="MttoPersonas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +104,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MttoUsuarioInfo.resx">
       <DependentUpon>MttoUsuarioInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MttoCategoriaEstado.resx">
+      <DependentUpon>MttoCategoriaEstado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MttoInventario.resx">
+      <DependentUpon>MttoInventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MttoUsuarios.resx">
       <DependentUpon>MttoUsuarios.cs</DependentUpon>
