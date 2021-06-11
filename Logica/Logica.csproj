@@ -41,11 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="CategoriaEstado\CategoriaEstadoCrud.cs" />
+    <Compile Include="CategoriaEstado\CategoriaEstadoSQL.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="ConexionTest.cs" />
-    <Compile Include="ConsultasUsuarios.cs" />
+    <Compile Include="Inventario\InventarioCrud.cs" />
+    <Compile Include="Inventario\InventarioSQL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuarioInfo\UsuarioInfocrud.cs" />
+    <Compile Include="UsuarioInfo\UsuarioInfoSQL.cs" />
+    <Compile Include="UsuarioSQL.cs" />
+    <Compile Include="UsuarioCrud.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

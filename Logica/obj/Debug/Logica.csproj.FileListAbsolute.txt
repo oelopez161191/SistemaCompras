@@ -1,0 +1,6 @@
+C:\GIT\SistemCompras\Logica\bin\Debug\Logica.dll
+C:\GIT\SistemCompras\Logica\bin\Debug\Logica.pdb
+C:\GIT\SistemCompras\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\GIT\SistemCompras\Logica\obj\Debug\Logica.dll
+C:\GIT\SistemCompras\Logica\obj\Debug\Logica.pdb
+C:\GIT\SistemCompras\Logica\obj\Debug\Logica.csprojAssemblyReference.cache
