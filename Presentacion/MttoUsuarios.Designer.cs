@@ -112,6 +112,7 @@ namespace Presentacion
             this.cmbTipoUsuario.Name = "cmbTipoUsuario";
             this.cmbTipoUsuario.Size = new System.Drawing.Size(121, 21);
             this.cmbTipoUsuario.TabIndex = 12;
+            this.cmbTipoUsuario.SelectedIndexChanged += new System.EventHandler(this.cmbTipoUsuario_SelectedIndexChanged);
             // 
             // btnLimpiar
             // 

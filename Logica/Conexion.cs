@@ -70,7 +70,30 @@ namespace Logica
                 conn.Close();
             }
         }
-        public bool EjecutarSQL(String SentenciaSQL)
+
+        public string ConsultarDatoSQL(String SentenciaSQL)
+        {
+            string  datos = "";
+            try
+            {
+                conn.Open();
+                cmd = new SqlCommand(SentenciaSQL, conn);
+                
+                    datos = Convert.ToString(cmd.ExecuteScalar());
+                
+            }
+            catch (Exception MiExc)
+            {
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return datos;
+        }
+
+    public bool EjecutarSQL(String SentenciaSQL)
         {
             try
             {
@@ -132,6 +155,35 @@ namespace Logica
                 while (reader.Read())
                 {
                     lista.Add(reader["tipo_usuario"].ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+
+            return lista;
+        }
+
+        public List<string> ListarSQLCombosUsuario(String SentenciaSQL)
+        {
+
+            List<string> lista = new List<string>();
+            try
+            {
+                conn.Open();
+                cmd = new SqlCommand(SentenciaSQL, conn);
+
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    lista.Add(reader["usuario_usuario"].ToString());
                 }
             }
             catch (Exception ex)

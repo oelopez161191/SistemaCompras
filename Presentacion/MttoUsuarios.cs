@@ -222,5 +222,10 @@ namespace Presentacion
 
             }
         }
+
+        private void cmbTipoUsuario_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

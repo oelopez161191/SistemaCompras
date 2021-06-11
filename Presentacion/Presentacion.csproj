@@ -70,6 +70,12 @@
     <Compile Include="MttoPersonas.Designer.cs">
       <DependentUpon>MttoPersonas.cs</DependentUpon>
     </Compile>
+    <Compile Include="MttoUsuarioInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MttoUsuarioInfo.Designer.cs">
+      <DependentUpon>MttoUsuarioInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="MttoUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MttoUsuarioInfo.resx">
+      <DependentUpon>MttoUsuarioInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MttoUsuarios.resx">
       <DependentUpon>MttoUsuarios.cs</DependentUpon>
